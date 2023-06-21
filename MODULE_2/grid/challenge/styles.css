@@ -6,6 +6,7 @@ p {
 
 .container {
     display: grid;
+<<<<<<< HEAD
     gap: 10px;
     grid-template-columns: repeat(1fr, 5);
     grid-template-areas: 
@@ -14,11 +15,22 @@ p {
  "l m m m r"
  "f f f f f"
 }
+=======
+    gap:10px;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-areas:
+    "h h h h h"
+    "n n n n n"
+    "l m m m r"
+    "f f f f f"
+ }
+>>>>>>> af296399f4ef4403768976dbef538ddf46890395
 
 .container p {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
    
 .header{
     grid-area: h;
@@ -29,6 +41,19 @@ p {
 .nav {
     grid-area: h;
     height: 150px;
+=======
+}
+
+
+.header{
+  grid-area: h;
+  height: 150px;
+}   
+
+.nav {
+  grid-area: n;
+  height:75px
+>>>>>>> af296399f4ef4403768976dbef538ddf46890395
 }
 
 .content-row {
@@ -37,11 +62,15 @@ p {
 
 .main{
   grid-area: m;
+<<<<<<< HEAD
 
+=======
+>>>>>>> af296399f4ef4403768976dbef538ddf46890395
 }
 
 
 .left-content{
+<<<<<<< HEAD
     grid-area: l;
    
 
@@ -49,9 +78,20 @@ p {
 
 .right-content{
  grid-area: r;
+=======
+   grid-area: l;
+}
+
+.right-content{
+ grid-area:r
+>>>>>>> af296399f4ef4403768976dbef538ddf46890395
 }
 
 .footer{
    grid-area: f;
+<<<<<<< HEAD
    height: 150px;
+=======
+   height:150px
+>>>>>>> af296399f4ef4403768976dbef538ddf46890395
 }
