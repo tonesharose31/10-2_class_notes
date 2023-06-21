@@ -1,11 +1,12 @@
-const coffeeOrders = require("coffe.js")
+const coffeeOrders = require("./data/coffee.js")
 
 function calculateTotalOrders(orders) { 
   let total = 0;
   for (let i = 0 ; i < orders.length; i++) {
-      total = total+1
-      return total
-  }
+      total += 1 
+    }
+    console.log(orders)
+    return total
 }
 
 
@@ -60,3 +61,11 @@ function calculateTotalPriceOfCompleteOrders(orders) {
 
   return totalPrice;
 }
+module.exports = {
+  calculateTotalOrders,
+    calculateTotalSales,
+    calculateOrderPrice,
+    getCompletedOrders,
+    getSalesByCoffeeType,
+    calculateTotalPriceOfCompleteOrders,
+};
